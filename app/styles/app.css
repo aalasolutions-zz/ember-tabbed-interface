@@ -1,0 +1,36 @@
+#dashboard-tabs{
+  outline: 1px solid red;
+
+}
+.clear{
+  clear: both;
+}
+.nav-tabs{
+  padding:0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-tabs a{
+  color: black;
+  background: lightgray;
+  padding: 0 10px;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.nav-tabs li{
+  padding:0;
+  margin: 0 0 0 10px;
+  list-style: none;
+  color: yellow;
+  float: left;
+}
+li.active{
+  font-size: 20px;
+}
+li button{
+  height: 15px;
+  background: red;
+  width: 5px;
+}
