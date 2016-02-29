@@ -11,7 +11,7 @@ export default Ember.Service.extend({
     var tabs = this.get('openTabs');
     var newTab = {
       id: 1,
-      route: 'dashboard',
+      route: 'index',
       title: 'Dashboard',
       isDirty: false,
       isActive: '',
@@ -84,7 +84,7 @@ export default Ember.Service.extend({
       alert('The tab you are closing is unsaved!');
     }
     this.get('openTabs').removeObject(tab);
-    this.get('router').transitionTo('dashboard');
+    this.get('router').transitionTo('index');
     var dashboardTab = this.get('openTabs').findBy('id', 1);
 
     this.switchToTab(dashboardTab);

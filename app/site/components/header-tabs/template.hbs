@@ -3,12 +3,26 @@
 
       {{#each openTabs key="@identity" as |tab|}}
           <li role="presentation" class="{{tab.isActive}}">
-
-            {{#link-to tab.route actioned=(action "tabClicked" tab)}}{{tab.title}}
-              {{#unless tab.isRoot}}
-                  <button class="close tab-close" {{action "closeTab" tab}}>&times;</button>
-              {{/unless}}
-            {{/link-to}}
+            {{#if tab.params}}
+              {{#link-to
+              tab.route
+              tab.params
+              class=tab.isActive
+              actioned=(action "tabClicked" tab)}}{{tab.title}}
+                {{#unless tab.isRoot}}
+                    <button class="close tab-close" {{action "closeTab" tab}}>&times;</button>
+                {{/unless}}
+              {{/link-to}}
+            {{else}}
+              {{#link-to
+              tab.route
+              class=tab.isActive
+              actioned=(action "tabClicked" tab)}}{{tab.title}}
+                {{#unless tab.isRoot}}
+                    <button class="close tab-close" {{action "closeTab" tab}}>&times;</button>
+                {{/unless}}
+              {{/link-to}}
+            {{/if}}
           </li>
       {{/each}}
     </ul>
