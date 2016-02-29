@@ -1,7 +1,8 @@
-# Xyz
+# Ember Tabbed Interface
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Trying to create a dyanamic tabbed interface. Where a route is opened as a tab??? We are also trying to do it. 
+
+Demo: http://aalasolutions.com/ember/tab/
 
 ## Prerequisites
 
