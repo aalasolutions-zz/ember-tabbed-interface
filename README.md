@@ -4,6 +4,18 @@ Trying to create a dyanamic tabbed interface. Where a route is opened as a tab??
 
 Demo: http://aalasolutions.com/ember/tab/
 
+## Important files
+
+### app/reopens/link-component.js [link](https://github.com/aalasolutions/ember-tabbed-interface/blob/master/app/reopens/link-component.js)
+Customize all `{{link-to}}` components
+### app/site/component/header-tabs [link](https://github.com/aalasolutions/ember-tabbed-interface/tree/master/app/site/components/header-tabs)
+Manage tabs and call the actions in the services, mainly used to display the tabs
+### app/site/services/headtabs/service.js [link](https://github.com/aalasolutions/ember-tabbed-interface/blob/master/app/site/services/headtabs/service.js)
+Handles all the tab events like, add/edit/remove/swap/switch
+
+
+**Other** files including initializer to include the service in every route, and include the link-componenet reopn in the main `app.js` 
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

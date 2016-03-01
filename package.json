@@ -1,6 +1,6 @@
 {
   "name": "ember-tabbed-interface",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dynamic Tabbed interface support in ember application",
   "private": true,
   "directories": {
